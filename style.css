@@ -144,15 +144,113 @@ body {
   font-size: 15px;
 }
 
-/** Cursor Styling */
-
-/* .kursor {
-  border-width: 1px !important;
-  width: 50px !important;
-  height: 50px !important;
+/** Ozone Styling **/
+.ozone-toggle-container {
+  cursor: pointer;
+  display: block;
 }
 
-.kursorChild {
-  width: 8px !important;
-  height: 8px !important;
+.ozone {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(178, 118, 181, 0.5);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+/** Styling the input button and send button of the chatbot **/
+
+.chatbot-input input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.chatbot-input input:focus {
+  outline: none;
+  border: 1px solid #5a6b3f;
+}
+
+.chatbot-input button {
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+}
+
+/** Chatbot message styling */
+.chatbot-message {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+/** Chatbot Container */
+.ozone-chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  width: 300px;
+  height: 400px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: rgb(178, 118, 181, 0.5);
+  flex-direction: column;
+  display: none;
+}
+
+/** Closing Btn Chatbot styling */
+
+.close-btn {
+  text-align: end;
+  color: #fff;
+  font-size: 18px;
+}
+
+/** Responsive Design */
+@media screen and (max-width: 1440px) {
+  .hero-paragraph-container {
+    width: 60%;
+  }
+
+  .product-card img {
+    width: 220px;
+  }
+  .product-card {
+    width: 22%;
+  }
+
+  .buy-btn-container {
+    padding: 3px 15px;
+  }
+}
+
+/* @media screen and (min-width: 1024px) {
+  .hero-section p span:not(.paragraph-hero-dot) {
+    font-size: 64px;
+  }
+
+  .paragraph-hero-dot {
+    margin: 25px;
+  }
+
+  .hero-description {
+    font-size: 25px;
+  }
+
+  .hero-paragraph-container {
+    width: 50%;
+  }
+
+  .product-card {
+    width: calc(33.33% - 14px);
+  }
 } */

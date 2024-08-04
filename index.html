@@ -8,6 +8,12 @@
       src="https://kit.fontawesome.com/a4b6467969.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/kursor"></script>
@@ -104,6 +110,18 @@
         </div>
       </div>
     </div>
+    <div class="ozone-chatbot-container">
+      <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+      <div class="chatbot-message"></div>
+      <div class="chatbot-input">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+    <div class="ozone-toggle-container">
+      <div class="ozone"><img src="assets/ozone-t.svg" alt="" />Ozone AI</div>
+    </div>
     <script src="cursor.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
