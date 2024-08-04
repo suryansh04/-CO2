@@ -246,6 +246,39 @@
         <!--  Start From here-->
       </div>
     </div>
+
+    <div id="purchase-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Complete Your Purchase</h2>
+        <form id="purchase-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="payment">Payment Method:</label>
+            <select id="payment" required>
+              <option value="">Select payment method</option>
+              <option value="credit">Credit Card</option>
+              <option value="debit">Debit Card</option>
+              <option value="paypal">PayPal</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">Confirm Purchase</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="modal.js"></script>
     <script src="search.js"></script>
     <script src="cursor.js"></script>
   </body>
