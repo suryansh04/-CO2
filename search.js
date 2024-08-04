@@ -14,10 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const transcript = event.results[0][0].transcript.toLowerCase();
 
       if (transcript.includes("delete")) {
-        searchBar.value = "";
-        productCards.forEach((card) => {
-          card.style.display = "block";
-        });
+        clearSearch();
       } else {
         searchBar.value = transcript;
         performSearch();
@@ -36,18 +33,28 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Web Speech API is not supported in this browser.");
   }
 
-  searchBar.addEventListener("input", () => {
-    if (searchBar.value.trim() === "") {
-      productCards.forEach((card) => {
-        card.style.display = "block";
-      });
-    } else {
-      performSearch();
-    }
-  });
+  searchBar.addEventListener("input", performSearch);
+
+  function clearSearch() {
+    searchBar.value = "";
+    showAllProducts();
+  }
+
+  function showAllProducts() {
+    productCards.forEach((card) => {
+      card.style.display = "block";
+    });
+  }
 
   function performSearch() {
-    const searchTerm = searchBar.value.toLowerCase();
+    const searchTerm = searchBar.value.toLowerCase().trim();
+
+    if (searchTerm === "") {
+      showAllProducts();
+      return;
+    }
+
+    let matchFound = false;
 
     productCards.forEach((card) => {
       const title = card
@@ -59,9 +66,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (title.includes(searchTerm) || description.includes(searchTerm)) {
         card.style.display = "block";
+        matchFound = true;
       } else {
         card.style.display = "none";
       }
     });
+
+    if (!matchFound) {
+      showAllProducts();
+    }
   }
 });

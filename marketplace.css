@@ -161,7 +161,6 @@ body {
   border: none;
   padding: 10px;
   color: #fff;
-  /* border-radius: 20%; */
   cursor: pointer;
   margin-left: 10px;
 }
@@ -213,6 +212,10 @@ body {
   border-radius: 20px;
   font-family: "Victor Serif Trial 40";
   color: #2d461a;
+}
+
+.cart-modal-content h2 {
+  margin-bottom: 10px;
 }
 
 .cart-item {
