@@ -5,7 +5,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   searchBar.addEventListener("input", () => {
     if (searchBar.value.trim() === "") {
-      alert("Fuck you");
+      const searchTerm = searchBar.value.toLowerCase();
+
+      productCards.forEach((card) => {
+        const title = card
+          .querySelector(".product-title")
+          .textContent.toLowerCase();
+        const description = card
+          .querySelector(".product-description")
+          .textContent.toLowerCase();
+
+        card.style.display = "block";
+      });
     }
   });
 
