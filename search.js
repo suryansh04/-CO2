@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         card.style.display = "block";
       });
+    } else {
+      performSearch();
     }
   });
 
@@ -38,12 +40,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-
-  searchButton.addEventListener("click", performSearch);
-
-  searchBar.addEventListener("keyup", function (event) {
-    if (event.key === "Enter") {
-      performSearch();
-    }
-  });
 });
