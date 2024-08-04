@@ -229,28 +229,6 @@ body {
   }
 
   .buy-btn-container {
-    padding: 3px 15px;
+    padding: 2px 15px;
   }
 }
-
-/* @media screen and (min-width: 1024px) {
-  .hero-section p span:not(.paragraph-hero-dot) {
-    font-size: 64px;
-  }
-
-  .paragraph-hero-dot {
-    margin: 25px;
-  }
-
-  .hero-description {
-    font-size: 25px;
-  }
-
-  .hero-paragraph-container {
-    width: 50%;
-  }
-
-  .product-card {
-    width: calc(33.33% - 14px);
-  }
-} */
