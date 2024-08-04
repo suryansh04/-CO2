@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "kursor": "^0.1.6",
+    "vercel": "^35.2.3"
+  }
+}

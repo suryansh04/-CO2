@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Victor Serif Trial 40";
+  src: url("./assets/fonts/VictorSerifTrial-40Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Victor Serif Trial 60 Semibold";
+  src: url("./assets/fonts/VictorSerifTrial-60Semibold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbebba;
+  font-family: "Victor Serif Trial 40";
+  height: 100vh;
+}
+
+/** Scrollbar Styling */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #5a6b3f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bed597;
+  border-radius: 4px;
+}
+
+/** Navigation Bar Styling */
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2d461a;
+}
+
+.nav-action-icons {
+  display: flex;
+  font-size: 20px;
+  gap: 30px;
+}
+
+.nav-action-icons a {
+  color: #545454;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  background-color: #2d461a;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 0 10px;
+}
+
+.hero-section-left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.hero-section p span:not(.paragraph-hero-dot) {
+  color: #bed597;
+  font-size: 64px;
+}
+.paragraph-hero-dot {
+  display: inline-block;
+  margin: 25px;
+}
+
+.hero-description {
+  font-size: 25px;
+  color: #fff;
+  line-height: 150%;
+}
+
+.hero-paragraph-container {
+  width: 50%;
+}
+
+/* Hero Product Card Styling */
+
+.hero-product-card-container {
+  display: flex;
+}
+
+.product-card {
+  background-color: #bed597;
+  padding: 20px;
+  border-radius: 20px;
+  width: 21%;
+  align-content: center;
+  margin-right: 20px;
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.buy-btn-container {
+  background-color: #2d461a;
+  border-radius: 16px;
+  padding: 5px 15px;
+}
+
+.buy-btn {
+  text-decoration: none;
+  color: #dbebba;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 15px;
+}
+
+/** Cursor Styling */
+
+/* .kursor {
+  border-width: 1px !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.kursorChild {
+  width: 8px !important;
+  height: 8px !important;
+} */

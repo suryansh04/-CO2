@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Victor Serif Trial 40";
+  src: url("./assets/fonts/VictorSerifTrial-40Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Victor Serif Trial 60 Semibold";
+  src: url("./assets/fonts/VictorSerifTrial-60Semibold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbebba;
+  font-family: "Victor Serif Trial 40";
+  height: 100vh;
+}
+
+/** Scrollbar Styling */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #5a6b3f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bed597;
+  border-radius: 4px;
+}
+
+/** Navigation Bar Styling */
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2d461a;
+}
+
+.nav-action-icons {
+  display: flex;
+  font-size: 20px;
+  gap: 30px;
+}
+
+.nav-action-icons a {
+  color: #545454;
+}
+
+/* Marketplace Section Styling */
+.marketplace-section {
+  background-color: #2d461a;
+  padding: 40px;
+}
+/* Marketplace Product Card Styling */
+
+.product-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+}
+
+.product-card {
+  background-color: #bed597;
+  padding: 20px;
+  border-radius: 20px;
+  align-content: center;
+  /* margin-right: 20px; */
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.buy-btn-container {
+  background-color: #2d461a;
+  border-radius: 16px;
+  padding: 5px 15px;
+}
+
+.buy-btn {
+  text-decoration: none;
+  color: #dbebba;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 15px;
+}
